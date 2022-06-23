@@ -33,15 +33,4 @@ public final class RemoteFeedLoader: FeedLoader {
 			}
 		}
 	}
-
-	private struct Root: Decodable {
-		let items: [FeedItemAPI]
-	}
-
-	private struct FeedItemAPI: Decodable {
-		let image_id: String
-		let image_desc: String
-		let image_loc: String
-		let image_url: URL
-	}
 }
